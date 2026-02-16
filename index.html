@@ -7,18 +7,45 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
+<header class="navbar">
+
+  <div class="logo">SKE City Park</div>
+
+  <!-- MENU DESKTOP -->
+  <nav class="nav-links">
+    <a href="#profil">Profil</a>
+    <a href="#wahana">Wahana</a>
+    <a href="#edukasi">Edukasi</a>
+    <a href="#waterpark">Waterpark</a>
+    <a href="#tiket">Tiket</a>
+    <a href="#pkl">PKL</a>
+  </nav>
+
+  <!-- ICON HP -->
+  <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+
+</header>
+
+<!-- MENU HP -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#profil">Profil</a>
+  <a href="#wahana">Wahana</a>
+  <a href="#edukasi">Edukasi</a>
+  <a href="#waterpark">Waterpark</a>
+  <a href="#tiket">Tiket</a>
+  <a href="#pkl">PKL</a>
+</div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
 <body>
 
-<header>
-<div class="logo">SKE City Park</div>
-<nav>
-<a href="#profil">Profil</a>
-<a href="#wahana">Wahana</a>
-<a href="#edukasi">Edukasi</a>
-<a href="#waterpark">Waterpark</a>
-<a href="#tiket">Tiket</a>
-<a href="#pkl">PKL</a>
-</nav>
+</html>
+
 </header>
 
 <!-- HERO -->
@@ -159,13 +186,13 @@ loading="lazy">
 <div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770797486/IMG-20260131-WA0019_wiugwk.jpg"><h3>Sepeda Mabur</h3><p>Kapasitas: 2 orang</p><p>Durasi: None</p></div>
 <div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770797659/IMG-20260211-WA0033_ibj7m2.jpg"><h3>Terapi Ikan</h3><p>Kapasitas: None</p><p>Durasi: None</p></div>
 <div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770797657/IMG-20260211-WA0023_rcdzhl.jpg"><h3>Motor Tumbur</h3><p>Kapasitas: 2 orang perunit</p><p>Durasi: 5 menit</p></div>
-<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770859342/IMG-20260211-WA0027_tppnnb.jpg"><h3>Cangkir Putar</h3><p>Kapasitas: 4 orang</p><p>Durasi: 5 menit</p></div>
-<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770797666/IMG-20260211-WA0039_q7zkgz.jpg"><h3>Bebek Goes</h3><p>Kapasitas: 2 orang</p><p>Durasi: none</p></div>
+<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1771215467/1771215145755_uk4685.jpg"><h3>Cangkir Putar</h3><p>Kapasitas: 4 orang</p><p>Durasi: 5 menit</p></div>
+<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1771215467/1771215166057_ml5alx.jpg"><h3>Bebek Goes</h3><p>Kapasitas: 2 orang</p><p>Durasi: none</p></div>
 <div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770859926/8F20jpD_fovkyd.webp"><h3>Kursi Mabur</h3><p>Kapasitas: 1 orang</p><p>Durasi: 5 menit</p></div>
 <div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770859342/IMG-20260211-WA0028_kv9uqf.jpg"><h3>Rainbow Slide</h3><p>Kapasitas: 1 orang</p><p>Durasi: none</p></div>
 <div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770859343/IMG-20260211-WA0031_n484ws.jpg"><h3>Dino Forest</h3><p>Kapasitas: None</p><p>Durasi: None</p></div>
-<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1770859342/IMG-20260211-WA0030_agzglh.jpg"><h3>Dino Dokar & Dino Baby</h3><p>Kapasitas: 2-3 orang</p><p>Durasi: 5 menit</p></div>
-<div class="card"><img src=""><h3>Korean Village</h3><p>Kapasitas: None</p><p>Durasi: None</p></div>
+<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1771215467/1771215201897_dkwytj.jpg"><h3>Dino Dokar & Dino Baby</h3><p>Kapasitas: 2-3 orang</p><p>Durasi: 5 menit</p></div>
+<div class="card"><img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1771215940/17_April_2025_88_oun9rq.jpg"><h3>Korean Village</h3><p>Kapasitas: None</p><p>Durasi: None</p></div>
 
 </div>
 </section>
@@ -225,7 +252,7 @@ loading="lazy">
 </div>
 
 <div class="card">
-<img src="">
+<img src="https://res.cloudinary.com/da9gzrj5x/image/upload/v1771215662/unnamed_onpo8f.webp">
 <h3>Tenggoro Hall</h3>
 
 <p>Gedung serbaguna untuk berbagai kegiatan komunitas.</p>
@@ -466,7 +493,7 @@ Waterpark modern dengan fasilitas lengkap dan keamanan terjamin untuk seluruh ke
 <div class="row-pkl"><span>Jurusan</span><p>Teknik Jaringan Komputer (TKJ)</p></div>
 <div class="row-pkl"><span>Tempat PKL</span><p>SKE City Park</p></div>
 <div class="row-pkl"><span>Periode</span><p>2025/2026</p></div>
-<div class="row-pkl"><span>Pembimbing Sekolah</span><p>Isi Nama</p></div>
+<div class="row-pkl"><span>Pembimbing Sekolah</span><p>Ibu Endar Winarsih</p></div>
 <div class="row-pkl"><span>Pembimbing Industri</span><p>Bp. Puji Nur Rahmanto</p></div>
 </div>
 

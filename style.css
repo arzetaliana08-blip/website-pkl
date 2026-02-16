@@ -1,3 +1,93 @@
+/* NAVBAR */
+.navbar{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:65px;
+  background:#0d2b45;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 25px;
+  z-index:9999;
+}
+
+.logo{
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+}
+
+/* MENU DESKTOP */
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:500;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd43b;
+}
+
+/* ICON 3 TITIK */
+.menu-icon{
+  display:none;
+  font-size:28px;
+  color:white;
+  cursor:pointer;
+}
+
+/* MENU HP */
+.mobile-menu{
+  position:fixed;
+  top:65px;
+  right:-100%;
+  width:200px;
+  background:#0d2b45;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  transition:.4s;
+}
+
+.mobile-menu a{
+  color:white;
+  text-decoration:none;
+  margin:10px 0;
+}
+
+/* SAAT MENU AKTIF */
+.mobile-menu.show{
+  right:0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+}
+
+.logo{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-icon{
+  font-size: 26px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 body{scroll-behavior:smooth}
 
@@ -583,4 +673,31 @@ transition:.4s;
 .galeri-pkl img:hover{
 transform:scale(1.05);
 box-shadow:0 20px 45px rgba(0,0,0,0.3);
+}
+
+/* ===== MOBILE FIX LAPORAN PKL ===== */
+@media (max-width: 768px){
+
+  .pkl-container{
+    flex-direction: column !important;
+    gap:20px;
+  }
+
+  .pkl-box{
+    width:100% !important;
+  }
+
+  .pkl-box h3{
+    text-align:center;
+  }
+
+  .pkl-box p,
+  .pkl-box li{
+    text-align:left;
+  }
+
+}
+
+.pkl-box{
+  word-wrap:break-word;
 }
