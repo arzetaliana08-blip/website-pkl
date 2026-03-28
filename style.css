@@ -701,3 +701,124 @@ box-shadow:0 20px 45px rgba(0,0,0,0.3);
 .pkl-box{
   word-wrap:break-word;
 }
+
+#profil{
+    padding:60px 20px;
+}
+
+.profil-container{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.profil-image img{
+    width:350px;
+    border-radius:15px;
+}
+
+.profil-text{
+    flex:1;
+    text-align:justify;
+    line-height:1.7;
+}
+
+@media (max-width:768px){
+
+    .profil-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profil-text{
+        text-align:justify;
+    }
+
+    .profil-image img{
+        width:100%;
+        max-width:400px;
+    }
+}
+/* SECTION */
+#sosial{
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* CONTAINER */
+.sosial-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+/* BOX SOSIAL MEDIA */
+.sosial-item{
+    width:180px;
+    height:140px;
+    background:#ffffff;
+    border-radius:15px;
+    text-decoration:none;
+    color:#333;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+/* ICON BESAR */
+.sosial-item i{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+/* TEXT */
+.sosial-item span{
+    font-size:18px;
+    font-weight:600;
+}
+
+/* HOVER EFFECT */
+.sosial-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* WARNA BRAND */
+.instagram i{ color:#E1306C; }
+.tiktok i{ color:#000; }
+.facebook i{ color:#1877F2; }
+.youtube i{ color:#FF0000; }
+
+/* CONTAINER PROFIL */
+.profil-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* FOTO PROFIL (DIBESARKAN) */
+.profil-image{
+    flex: 1.3; /* lebih besar dari teks */
+}
+
+.profil-image img{
+    width: 100%;
+    max-width: 520px;   /* ukuran BESAR */
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* TEKS PROFIL */
+.profil-text{
+    flex: 1;
+}
